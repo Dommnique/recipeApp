@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #294B29;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.card{
+    background-color: #DBE7C9;
+    width: 600px;
+    height: fit-content;
+    margin: 40px 0;
+    padding: 20px;
+    position: relative;
+}
+
+.header{
+    margin-top: 10px;
+}
+
+.header input{
+    width: 80%;
+    height: 25px;
+    padding: 8px;
+    font-size: 19px;
+    outline: 0;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid black;
+    margin-right: 10px;
+}
+
+.header button{
+    padding: 6px 10px;
+    border-radius: 5px;
+    background-color: #294B29;
+    color: aliceblue;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.mealImg{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.mealImg img{
+    height: 180px;
+    width: 180px;
+}
+
+.mealInfo{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.subDiv{
+    height: fit-content;
+    width: 300px;
+    background-color: #294B29;
+    color: #DBE7C9;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.subDiv h4{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.ingredients ul{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px 25px;
+}
+
+
+.ingredients ul li{
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+
+.ingredients{
+    margin: 15px 20px;
+}
+
+.recipe-btn{
+    background-color: #294B29;
+    color: #DBE7C9;
+    padding: 8px;
+    border-radius: 8px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    bottom: 2%;
+    right: 4%;
+}
+
+.recipe-page{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    white-space: pre-line;
+    word-wrap: break-word;
+    line-height: 20px;
+}
+
+.content{
+    background-color: #DBE7C9;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 60px 20px;
+}
+
+.closeBtn{
+    background-color: #294B29;
+    padding: 5px;
+    color: #DBE7C9;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+
+.hide{
+    display: none;
+}
+
+.mealDiv{
+    width: auto;
+    height: fit-content;
+    margin: 10px;
+}
+
+.singleMeal{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0 20px;
+    padding: 25px;
+}
+
+.mealDiv img{
+    height: 200px;
+    width: 200px;
+    margin: 0 10px;
+}
+
+.miniDiv h4{
+    font-size: 18px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/*Media query*/
+@media (max-width:720px) {
+    .card{
+        width: 550px;
+    }
+
+    .mealDiv img{
+        height: 160px;
+        width: 160px;
+        margin: 0;
+    }
+
+    .singleMeal {
+        gap: 0 75px;
+    }
+
+    .miniDiv h4{
+        font-size: 16px;
+        margin-top: 3px;
+    }
+}
+
+@media (max-width: 570px) {
+    .card{
+        width: 480px;
+    }
+}
+
+@media (max-width: 420px) {
+    .card{
+        width: 270px;
+        margin-bottom: 20px;
+    }
+
+    .header input{
+        width: 60%;
+    }
+
+    .singleMeal{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .ingredients ul{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0px;
+        margin-bottom: 30px;
+    }
+
+    .mealImg img{
+        height: 150px;
+        width: 150px;
+    }
+
+    .subDiv h4{
+        margin-bottom: 3px;
+        font-size: 18px;
+    }
+
+    .content{
+        padding: 23px 14px;
+    }
+
+    .closeBtn{
+        position: absolute;
+        top: 1%;
+        right: 3%;
+    }
+}
