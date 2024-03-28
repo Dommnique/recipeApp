@@ -99,7 +99,7 @@ function displayResult(data) {
 function fetchData() {
     const searchTerm = inputField.value.trim();
 
-    const url = `https:themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`;
+    const url = `https://themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`;
 
     function emptyField() {
                 result.innerHTML = `
