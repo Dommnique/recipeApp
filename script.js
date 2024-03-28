@@ -125,6 +125,7 @@ function fetchData() {
             fetch(url)
             .then(res => res.json())
             .then(data => displayResult(data));
+            console.log(url);
             notEmpty();
         }
     } catch (error) {
